@@ -46,6 +46,8 @@ if ($query[0] == 'select') {
   echo "Error processing request";
 }
 
+echo '<button onclick=\'history.back();\'>go back</button>';
+
 // disconnect
 mysqli_free_result($result);
 mysqli_close($conn);
